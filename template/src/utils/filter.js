@@ -3,7 +3,7 @@
  */
 
 /* 数字千分化 */
-function thousands(value) {
+function thousands (value) {
   if (value === null) return
   value = value.toString()
   return value.replace(/\B(?=(?:\d{3})+(?!\d))/g, ',')
@@ -32,7 +32,7 @@ let formatDate = (date, fmt) => {
       fmt = fmt.replace(RegExp.$1, (RegExp.$1).length === 1 ? str : padLeftZero(str))
     }
   }
-  function padLeftZero(str) {
+  function padLeftZero (str) {
     return ('00' + str).substr(str.length)
   }
   return fmt
@@ -42,4 +42,3 @@ export default {
   thousands,
   formatDate
 }
-

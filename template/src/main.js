@@ -22,7 +22,6 @@ Object.keys(filter).forEach((key, index, arr) => { // Object.keys返回遍历的
   Vue.filter(key, filter[key])
 })
 
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
