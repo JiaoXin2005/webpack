@@ -7,8 +7,21 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import 'normalize.css/normalize.css'
+import './style/index.scss'
+import filter from './utils/filter.js'
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
+/* register globally */
+Vue.use(ElementUI, { size: 'small' })
+/* 全局注册filter */
+Object.keys(filter).forEach((key, index, arr) => { // Object.keys返回遍历的key数组
+  Vue.filter(key, filter[key])
+})
+
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,0 +1,70 @@
+body,
+html {
+  height: 100%;
+  min-width: 960px;
+  background: #fff;
+}
+body{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+a,
+a:focus,
+a:hover {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common css */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* router fade transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease;
+}
+
+.paginationFr {
+  float: right;
+  margin: 20px;
+}
+
+.danger {
+  color: #FF4949;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+.wd-200 {
+  width: 200px;
+}
+.wd-230 {
+  width: 230px;
+}
+.wd-300 {
+  width: 300px;
+}
+.wd-400 {
+  width: 400px;
+}
+
+.fa55 {
+  color: #fa5555;
+}
